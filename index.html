@@ -6,168 +6,145 @@
     <title>AI Mesh Security - Neighborhood Safety System</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 text-gray-800 font-sans">
+
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <span class="text-2xl font-bold text-blue-600">AI Mesh Security</span>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <a href="#features" class="text-gray-700 hover:text-blue-600">Features</a>
-                    <a href="#how-it-works" class="text-gray-700 hover:text-blue-600">Technology</a>
-                    <a href="#implementation" class="text-gray-700 hover:text-blue-600">Implementation</a>
-                </div>
+<nav class="backdrop-blur-2xl bg-blue-50 border border-white/40 shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex justify-between h-16 items-center">
+            <span class="text-2xl font-extrabold bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent">
+                AI Mesh Security
+            </span>
+            <div class="flex items-center space-x-6 text-gray-800">
+                <a href="#features" class="hover:text-blue-600 transition-colors">Features</a>
+                <a href="#how-it-works" class="hover:text-blue-600 transition-colors">Technology</a>
+                <a href="#implementation" class="hover:text-blue-600 transition-colors">Implementation</a>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
+
+
+
 
     <!-- Hero Section -->
-    <div class="relative h-screen bg-cover bg-center" style="background-image: url('./pixelcut-export.jpeg');">
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div class="relative z-10 max-w-7xl mx-auto h-full">
-            <div class="flex items-center h-full pb-8 px-4 sm:px-6">
-                <main class="max-w-2xl">
-                    <div class="text-left">
-                        <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
-                            <div class="block">AI-enhanced Mesh Network <span class="text-blue-400">Security System</span></div>
-                        </h1>
-                        <p class="mt-3 text-base text-gray-200 sm:mt-5 sm:text-lg sm:max-w-xl md:mt-5 md:text-xl">
-                            Advanced mesh network security powered by AI and ESP32-CAM technology. Featuring peer-to-peer alerts, distributed monitoring, and intelligent threat detection.
-                        </p>
-                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-start">
-                            <div class="rounded-md shadow">
-                                <a href="http://192.168.4.1" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10">
-                                    Try Now!
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-            </div>
+<section class="relative h-screen bg-cover bg-center" style="background-image: url('./heroImage.webp');">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80"></div>
+    <div class="relative z-10 flex items-center h-full px-6">
+        <div class="max-w-2xl text-white pl-28"> <!-- Added pl-12 for left padding -->
+            <h1 class="text-5xl sm:text-6xl font-extrabold leading-tight">
+                AI-enhanced Mesh Network <span class="text-blue-400">Security System</span>
+            </h1>
+            <p class="mt-6 text-lg text-gray-200">
+                Advanced mesh network security powered by AI and ESP32-CAM technology. Featuring peer-to-peer alerts, distributed monitoring, and intelligent threat detection.
+            </p>
+            <a href="http://192.168.4.1"
+               class="mt-8 inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full font-semibold text-white shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+                Try Now!
+            </a>
         </div>
     </div>
+</section>
 
-    <!-- Features Section -->
-    <div id="features" class="py-12 bg-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                    Advanced AI Security Features
-                </h2>
-            </div>
-            <div class="mt-10">
-                <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
-                    <div class="bg-white p-6 rounded-lg shadow">
-                        <h3 class="text-lg font-medium text-gray-900">AI Face Detection</h3>
-                        <p class="mt-2 text-gray-600">Intelligent algorithms analyze video footage to identify potential intruders and distinguish between genuine threats and harmless visitors.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow">
-                        <h3 class="text-lg font-medium text-gray-900">Mesh Network Architecture</h3>
-                        <p class="mt-2 text-gray-600">Cameras connect through ESP32 modules in a mesh network, ensuring seamless communication even if one node fails.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow">
-                        <h3 class="text-lg font-medium text-gray-900">Peer-to-Peer Alerts</h3>
-                        <p class="mt-2 text-gray-600">Direct camera-to-camera communication with instantaneous alerts and reduced latency for faster response times.</p>
-                    </div>
+
+    <!-- Features -->
+    <section id="features" class="py-16 bg-gradient-to-br from-gray-100 to-gray-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-center text-4xl font-bold text-gray-900">Advanced AI Security Features</h2>
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
+                    <h3 class="text-lg font-semibold text-gray-900">AI Face Detection</h3>
+                    <p class="mt-2 text-gray-600">Intelligent algorithms analyze video footage...</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl">
+                    <h3 class="text-lg font-semibold text-gray-900">Mesh Network Architecture</h3>
+                    <p class="mt-2 text-gray-600">Cameras connect through ESP32 modules...</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl">
+                    <h3 class="text-lg font-semibold text-gray-900">Peer-to-Peer Alerts</h3>
+                    <p class="mt-2 text-gray-600">Direct camera-to-camera communication...</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- How It Works Section -->
-    <div id="how-it-works" class="py-12 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h2 class="text-3xl font-extrabold text-gray-900">Advanced Technology Stack</h2>
-                <p class="mt-4 text-lg text-gray-600">Comprehensive security through integrated systems</p>
-            </div>
-            <div class="mt-10">
-                <div class="flex flex-col space-y-10 md:space-y-0 md:flex-row md:space-x-10">
-                    <div class="flex-1 text-center">
-                        <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
-                            <span class="text-2xl font-bold text-blue-600">1</span>
-                        </div>
-                        <h3 class="mt-4 text-lg font-medium">Distributed Monitoring</h3>
-                        <p class="mt-2 text-gray-600">Real-time streaming with event-triggered recording and local storage</p>
-                    </div>
-                    <div class="flex-1 text-center">
-                        <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
-                            <span class="text-2xl font-bold text-blue-600">2</span>
-                        </div>
-                        <h3 class="mt-4 text-lg font-medium">AI Processing</h3>
-                        <p class="mt-2 text-gray-600">Face detection, behavioral analysis, and real-time threat assessment</p>
-                    </div>
-                    <div class="flex-1 text-center">
-                        <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
-                            <span class="text-2xl font-bold text-blue-600">3</span>
-                        </div>
-                        <h3 class="mt-4 text-lg font-medium">Security Protocols</h3>
-                        <p class="mt-2 text-gray-600">TLS/DTLS encryption with mutual authentication and regular updates</p>
-                    </div>
+    <!-- Technology Stack -->
+    <section id="how-it-works" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-gray-900">Advanced Technology Stack</h2>
+            <p class="mt-4 text-gray-600">Comprehensive security through integrated systems</p>
+            <div class="mt-12 flex flex-col md:flex-row gap-10">
+                <div class="flex-1 p-6 rounded-xl bg-gray-50 shadow-md">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto text-2xl font-bold text-blue-600">1</div>
+                    <h3 class="mt-4 font-semibold text-lg">Distributed Monitoring</h3>
+                    <p class="mt-2 text-gray-600">Real-time streaming with event-based storage</p>
+                </div>
+                <div class="flex-1 p-6 rounded-xl bg-gray-50 shadow-md">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto text-2xl font-bold text-blue-600">2</div>
+                    <h3 class="mt-4 font-semibold text-lg">AI Processing</h3>
+                    <p class="mt-2 text-gray-600">Face detection, behavioral analysis, threat assessment</p>
+                </div>
+                <div class="flex-1 p-6 rounded-xl bg-gray-50 shadow-md">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto text-2xl font-bold text-blue-600">3</div>
+                    <h3 class="mt-4 font-semibold text-lg">Security Protocols</h3>
+                    <p class="mt-2 text-gray-600">TLS/DTLS encryption + mutual authentication</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="implementation" class="container mx-auto p-8 bg-gray-100">
-        <h1 class="text-3xl font-bold mb-6">Hardware and Software Integration</h1>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <!-- Camera Hardware Section -->
-            <div class="flex flex-col items-center p-6">
-                <img src="./esp32cam.png" alt="Camera Hardware" class="rounded-lg shadow-md">
-                <h2 class="text-3xl font-bold mt-4">Camera Hardware</h2>
-                <p class="mt-2 text-justify text-gray-700">
-                    Cameras have just enough resolution to be able to identify faces with just enough accuracy and are light enough to run the model on ESP32. With the project getting enough funding, we might be able to get a better camera module with higher resolution to add people to the whitelist.
-                </p>
-            </div>
-
-            <!-- Software Platform Section -->
-            <div class="flex flex-col items-center">
-                <img src="./app.png" alt="Software Platform" class="rounded-lg shadow-md">
-                <h2 class="text-3xl font-bold mt-4">Software Platform</h2>
-                <p class="mt-2 text-justify text-gray-700">
-                    The software platform provides a user-friendly interface for monitoring, managing alerts, and customizing system settings.
-                </p>
+    <!-- Implementation -->
+    <section id="implementation" class="py-16 bg-gradient-to-br from-gray-100 to-gray-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <h1 class="text-3xl font-bold mb-8">Hardware and Software Integration</h1>
+            <div class="grid gap-8 lg:grid-cols-2">
+                <div class="p-6 bg-white rounded-xl shadow-lg">
+                    <img src="./esp32cam.png" alt="Camera Hardware" class="rounded-lg shadow-md">
+                    <h2 class="mt-4 text-2xl font-semibold">Camera Hardware</h2>
+                    <p class="mt-2 text-gray-700">Cameras have just enough resolution...</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-lg">
+                    <img src="./app.png" alt="Software Platform" class="rounded-lg shadow-md">
+                    <h2 class="mt-4 text-2xl font-semibold">Software Platform</h2>
+                    <p class="mt-2 text-gray-700">The software platform provides...</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Implementation Section -->
-    <div class="container mx-auto p-8 bg-white mb-14">
-        <h1 class="text-3xl font-bold mb-6">Practical Implementation</h1>
-        <div class="overflow-x-auto">
-            <!-- Set table width to 60vw using w-[60vw] -->
-            <table class="w-[60vw] min-w-full table-auto bg-white shadow-md rounded-lg">
-                <thead>
-                    <tr class="bg-amber-200">
-                        <th class="px-4 py-2 text-left text-xl font-bold text-gray-700">Hardware</th>
-                        <th class="px-4 py-2 text-left text-xl font-bold text-gray-700">Software</th>
-                        <th class="px-4 py-2 text-left text-xl font-bold text-gray-700">Connectivity</th>
-                        <th class="px-4 py-2 text-left text-xl font-bold text-gray-700">Expandability</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="bg-amber-100">
-                        <td class="border px-4 py-2">Cameras with wide-angle lenses and night vision capabilities (IR), ESP32 modules, and Raspberry Pi</td>
-                        <td class="border px-4 py-2">A client-server platform for monitoring, saving clips, and alert management</td>
-                        <td class="border px-4 py-2">ESP modules are connected using WIFI-direct with each other. They all are connected to a central local server.</td>
-                        <td class="border px-4 py-2">This system can be further enhanced and expanded using other sensors like motion sensors, temperature sensors, etc., further securing your home.</td>
-                    </tr>
-                </tbody>
-            </table>
+    <!-- Practical Implementation Table -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h1 class="text-3xl font-bold mb-6">Practical Implementation</h1>
+            <div class="overflow-x-auto rounded-lg shadow-lg">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr class="bg-gradient-to-r from-amber-300 to-amber-400 text-gray-900">
+                            <th class="px-6 py-3 text-left text-lg font-semibold">Hardware</th>
+                            <th class="px-6 py-3 text-left text-lg font-semibold">Software</th>
+                            <th class="px-6 py-3 text-left text-lg font-semibold">Connectivity</th>
+                            <th class="px-6 py-3 text-left text-lg font-semibold">Expandability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-amber-50 hover:bg-amber-100">
+                            <td class="px-6 py-4 border">Cameras with wide-angle...</td>
+                            <td class="px-6 py-4 border">A client-server platform...</td>
+                            <td class="px-6 py-4 border">ESP modules via Wi-Fi Direct...</td>
+                            <td class="px-6 py-4 border">Can integrate other sensors...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
-
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-            <div class="text-center text-gray-400">
-                <p>&copy; 2024 AI Mesh Security. Created by Manikandan, Ramakrishnan, and Thejeshwaar</p>
-            </div>
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="max-w-7xl mx-auto py-8 px-6 text-center">
+            &copy; 2024 AI Mesh Security. Created by Manikandan, Ramakrishnan, and Thejeshwaar
         </div>
     </footer>
+
 </body>
 </html>
